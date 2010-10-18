@@ -19,7 +19,7 @@ namespace KeepFocused
         {
             try
             {
-                System.Diagnostics.Process.Start("http://keepfocused.codeplex.com");
+                System.Diagnostics.Process.Start("http://code.superbil.info/2010/10/keep-focused.html");
             }
             catch (Exception ex)
             {
@@ -31,7 +31,7 @@ namespace KeepFocused
         {
             try
             {
-                System.Diagnostics.Process.Start("http://keepfocused.codeplex.com");
+                System.Diagnostics.Process.Start("http://code.superbil.info/2010/10/keep-focused.html");
             }
             catch (Exception ex)
             {
@@ -44,7 +44,7 @@ namespace KeepFocused
         {
             try
             {
-                System.Diagnostics.Process.Start("http://keepfocused.codeplex.com/documentation");
+                System.Diagnostics.Process.Start("http://code.superbil.info/2010/10/keep-focused.html");
             }
             catch (Exception ex)
             {

@@ -9,7 +9,7 @@ using System.Resources;
 [assembly: AssemblyTitle("KeepFocused")]
 [assembly: AssemblyDescription("Pomodoro Technique (for Time Management) Tool")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Yanesh Tyagi")]
+[assembly: AssemblyCompany("Yanesh Tyagi (Fix by Superbil)")]
 [assembly: AssemblyProduct("KeepFocused")]
 [assembly: AssemblyCopyright("Copyright © Yanesh Tyagi 2009")]
 [assembly: AssemblyTrademark("KeepFocused")]
