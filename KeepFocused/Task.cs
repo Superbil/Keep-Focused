@@ -28,7 +28,7 @@ namespace KeepFocused
 
         private void Task_Load(object sender, EventArgs e)
         {
-            if (Settings.Default.TaskDataFilePath == "")
+            if (Settings.Default.TaskDataFilePath == "no")
                 Settings.Default.TaskDataFilePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\" + Settings.Default.AppName;
             taskDataFile = Settings.Default.TaskDataFilePath + @"\" +Settings.Default.TaskDataFileName;
             txtSessionDataFileName.Text = taskDataFile;
@@ -49,9 +49,13 @@ namespace KeepFocused
         {
             FolderBrowserDialog path = new FolderBrowserDialog();
             path.ShowDialog();
-            Settings.Default.TaskDataFilePath = path.SelectedPath;
-            taskDataFile = path.SelectedPath + @"\" + Settings.Default.TaskDataFileName;
-            txtSessionDataFileName.Text = taskDataFile;
+            if (path.SelectedPath != "")
+            {
+                Settings.Default.TaskDataFilePath = path.SelectedPath;
+                taskDataFile = Settings.Default.TaskDataFilePath + @"\" + Settings.Default.TaskDataFileName;
+                txtSessionDataFileName.Text = taskDataFile;
+                Settings.Default.Save();
+            }
         }
     }
 }

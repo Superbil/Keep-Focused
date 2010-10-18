@@ -43,13 +43,37 @@ namespace KeepFocused.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("no")]
         public string TaskDataFilePath {
             get {
                 return ((string)(this["TaskDataFilePath"]));
             }
             set {
                 this["TaskDataFilePath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int FormX {
+            get {
+                return ((int)(this["FormX"]));
+            }
+            set {
+                this["FormX"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int FormY {
+            get {
+                return ((int)(this["FormY"]));
+            }
+            set {
+                this["FormY"] = value;
             }
         }
     }

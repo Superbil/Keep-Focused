@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KeepFocusedForm));
             this.lblTimer = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblClose = new System.Windows.Forms.Label();
@@ -40,14 +41,13 @@
             // lblTimer
             // 
             this.lblTimer.AutoSize = true;
-            this.lblTimer.Font = new System.Drawing.Font("Arial Unicode MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimer.ForeColor = System.Drawing.Color.White;
-            this.lblTimer.Location = new System.Drawing.Point(37, 0);
+            this.lblTimer.Location = new System.Drawing.Point(43, 0);
             this.lblTimer.Margin = new System.Windows.Forms.Padding(0);
             this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(50, 19);
+            this.lblTimer.Size = new System.Drawing.Size(0, 17);
             this.lblTimer.TabIndex = 2;
-
             // 
             // timer1
             // 
@@ -59,7 +59,7 @@
             this.lblClose.AutoSize = true;
             this.lblClose.Font = new System.Drawing.Font("Wingdings 2", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.lblClose.ForeColor = System.Drawing.Color.Red;
-            this.lblClose.Location = new System.Drawing.Point(98, 2);
+            this.lblClose.Location = new System.Drawing.Point(114, 2);
             this.lblClose.Margin = new System.Windows.Forms.Padding(0);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(23, 17);
@@ -72,7 +72,7 @@
             this.lblMoveHandle.AutoSize = true;
             this.lblMoveHandle.Font = new System.Drawing.Font("Wingdings", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoveHandle.ForeColor = System.Drawing.Color.DimGray;
-            this.lblMoveHandle.Location = new System.Drawing.Point(1, 3);
+            this.lblMoveHandle.Location = new System.Drawing.Point(1, 4);
             this.lblMoveHandle.Name = "lblMoveHandle";
             this.lblMoveHandle.Size = new System.Drawing.Size(10, 14);
             this.lblMoveHandle.TabIndex = 5;
@@ -88,7 +88,7 @@
             this.lblPlayPause.ForeColor = System.Drawing.Color.White;
             this.lblPlayPause.Image = global::KeepFocused.Properties.Resources.stop_Icon_White;
             this.lblPlayPause.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblPlayPause.Location = new System.Drawing.Point(23, 2);
+            this.lblPlayPause.Location = new System.Drawing.Point(27, 2);
             this.lblPlayPause.Name = "lblPlayPause";
             this.lblPlayPause.Size = new System.Drawing.Size(13, 14);
             this.lblPlayPause.TabIndex = 4;
@@ -99,23 +99,23 @@
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
-            this.lblInfo.Font = new System.Drawing.Font("Harrington", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfo.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.lblInfo.Location = new System.Drawing.Point(87, 0);
+            this.lblInfo.Location = new System.Drawing.Point(101, 0);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(14, 19);
+            this.lblInfo.Size = new System.Drawing.Size(13, 20);
             this.lblInfo.TabIndex = 6;
             this.lblInfo.Text = "i";
             this.lblInfo.Click += new System.EventHandler(this.lblInfo_Click);
             // 
             // KeepFocusedForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(120, 20);
+            this.ClientSize = new System.Drawing.Size(140, 25);
             this.ControlBox = false;
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.lblMoveHandle);
@@ -123,13 +123,16 @@
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.lblTimer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "KeepFocusedForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.KeepFocusedForm_Load);
+            this.Move += new System.EventHandler(this.moveForm);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -7,6 +7,7 @@ using System.Media;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using KeepFocused.Properties;
 
 namespace KeepFocused
 {
@@ -89,6 +90,7 @@ namespace KeepFocused
             OpenTaskForm();
             startTimer();
             timer1.Enabled = true;
+            this.Location = new Point(Settings.Default.FormX,Settings.Default.FormY);
         }
 
         private void startTimer()
@@ -194,6 +196,13 @@ namespace KeepFocused
                 taskForm.Left = this.Left;
 
             taskForm.ShowDialog();
+        }
+
+        private void moveForm(object sender, EventArgs e)
+        {
+            Settings.Default.FormX = this.Location.X;
+            Settings.Default.FormY = this.Location.Y;
+            Settings.Default.Save();
         }
     }
 }

@@ -138,4 +138,29 @@
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B//7+///+/v///v7///7+///+/v///v7///7+///+/v///v7///7+//rz7f/47OL/+Ozi//js
+        4v/++/n///7+///+/v///v7///7+///+/v///v7///7+///+/v///v7///7+/+a7mf/WkFn/1pBZ/9aQ
+        Wf/WkFn/2ppo//349f///v7///7+///+/v/89vL//fr4///+/v///v7///7+//nv5v/Wj1f/15Re/72L
+        if+9i43/4rCI/+W6mP/++/n///7+///+/v///v7/3aJz/9+pff/+/Pr///7+///+/v/qx6v/1Y5V/+nE
+        pv+Dgfr/g4H6//78+v/+/fz///7+///+/v///v7///7+/9+qf//VjlX/8drH///+/v///v7/3KBx/9WO
+        Vf/47eT/gID//4CA/////v7///7+///+/v///v7///7+///+/v/v1b//1Y5V/+Ctg////v7/9ufb/9WO
+        Vf/epXj///7+/4CA//95ef//8fH///Hx///7+/////7+///+/v/79fD/+vDp/9iWYv/WkFn/+e/m/+e+
+        nv/VjlX/7Myy///+/v+AgP//Jyf//05O//9OTv//y8v////+/v/u0Ln/3KBx/9+pff/ktpL/1Y5V/+jC
+        ov/Zmmf/1Y5V//rw6f///v7/gID//3Bw///g4P//4OD///f3///36+D/15Jc/9aQWf/hr4b/9ODR/9WO
+        Vf/XlF7/1pBZ/9WOVf/v1b////7+/4CA//+AgP////7+///+/v///v7/7c61/9WOVf/jtI7//vv5///+
+        /v/do3T/1Y5V/+KwiP/Xklz/15Re//HZxv+Dg/7/VFT//6Sk//+kpP//2Nj//+7Su//VjlX/58Cg///+
+        /v///v7/68it/9WOVf/jtI7/7tK7/9eSW//XlF7/wKvN/4yM/v+Ojv//jo7//8zM///58Oj/15Jc/9mY
+        Zf/47OL//vz6/+7Quf/VjlX/3qZ5///+/v/uz7b/1pBZ/9iVYP/04NH///7+///+/v///v7///7+/+vI
+        rf/WkFn/2Zhl/+Gvhv/YlmL/1Y5V/+jAoP///v7///7+/+vLsP/WkFn/2JZi//vz7f///v7///7+///+
+        /v///v7/7tC5/9qcav/WkFn/1pBZ/+O0jv/9+PX///7+///+/v///v7/68uw/9qaZ//36+D///7+///+
+        /v///v7///7+///+/v/+/fz/+vDp//z28v///v7///7+///+/v///v7///7+///+/v///v7///7+///+
+        /v///v7/AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
 </root>

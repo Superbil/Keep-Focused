@@ -9,7 +9,13 @@
       <Value Profile="(Default)">KeepFocused</Value>
     </Setting>
     <Setting Name="TaskDataFilePath" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">no</Value>
+    </Setting>
+    <Setting Name="FormX" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="FormY" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>
