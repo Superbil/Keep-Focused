@@ -62,6 +62,7 @@ namespace KeepFocused
                     lblTimer.ForeColor = Color.White;
                     if (optionPlaySound)
                         SystemSounds.Beep.Play();
+                    showMessage("Break is over");
                 }
                 else
                 {
@@ -73,8 +74,7 @@ namespace KeepFocused
                     if (optionPlaySound)
                         SystemSounds.Asterisk.Play();
                     if (optionShowMessage)
-                        MessageBox.Show("Pomodoro activity finished", "Keep Focused", MessageBoxButtons.OK, MessageBoxIcon.Asterisk,
-                            MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                        showMessage("Pomodoro activity finished");
                 }
             }
 
@@ -196,6 +196,12 @@ namespace KeepFocused
                 taskForm.Left = this.Left;
 
             taskForm.ShowDialog();
+        }
+
+        private void showMessage(string message)
+        {
+            MessageBox.Show(message, "Keep Focused", MessageBoxButtons.OK, MessageBoxIcon.Asterisk,
+                            MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
         }
 
         private void moveForm(object sender, EventArgs e)
