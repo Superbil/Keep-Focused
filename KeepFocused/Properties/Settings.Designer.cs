@@ -55,7 +55,7 @@ namespace KeepFocused.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("200")]
         public int FormX {
             get {
                 return ((int)(this["FormX"]));
@@ -67,7 +67,7 @@ namespace KeepFocused.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("200")]
         public int FormY {
             get {
                 return ((int)(this["FormY"]));

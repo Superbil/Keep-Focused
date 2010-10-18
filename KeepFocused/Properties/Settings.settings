@@ -12,10 +12,10 @@
       <Value Profile="(Default)">no</Value>
     </Setting>
     <Setting Name="FormX" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">200</Value>
     </Setting>
     <Setting Name="FormY" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">200</Value>
     </Setting>
   </Settings>
 </SettingsFile>
