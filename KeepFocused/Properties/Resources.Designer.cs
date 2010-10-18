@@ -60,9 +60,9 @@ namespace KeepFocused.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap Black_Hand_32x32 {
+        internal static System.Drawing.Bitmap BlackHand32x32 {
             get {
-                object obj = ResourceManager.GetObject("Black Hand 32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("BlackHand32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -74,9 +74,9 @@ namespace KeepFocused.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap hand_Small {
+        internal static System.Drawing.Bitmap handSmall {
             get {
-                object obj = ResourceManager.GetObject("hand Small", resourceCulture);
+                object obj = ResourceManager.GetObject("handSmall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
