@@ -145,9 +145,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(6, 149);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 16);
+            this.label5.Size = new System.Drawing.Size(122, 16);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Version: 0.3.2 beta";
+            this.label5.Text = "Version: 0.3.2 beta 2";
             // 
             // fixName
             // 
