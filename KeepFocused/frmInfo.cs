@@ -31,7 +31,7 @@ namespace KeepFocused
         {
             try
             {
-                System.Diagnostics.Process.Start("http://code.superbil.info/2010/10/keep-focused.html");
+                System.Diagnostics.Process.Start("http://github.com/Superbil/Keep-Focused/downloads");
             }
             catch (Exception ex)
             {
@@ -44,7 +44,7 @@ namespace KeepFocused
         {
             try
             {
-                System.Diagnostics.Process.Start("http://code.superbil.info/2010/10/keep-focused.html");
+                System.Diagnostics.Process.Start("http://code.superbil.info/2010/10/keep-focused.ht");
             }
             catch (Exception ex)
             {

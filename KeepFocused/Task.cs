@@ -22,7 +22,7 @@ namespace KeepFocused
         {
             if (!Directory.Exists(Settings.Default.TaskDataFilePath))
                 Directory.CreateDirectory(Settings.Default.TaskDataFilePath);
-            File.AppendAllText(Settings.Default.TaskDataFilePath + Settings.Default.TaskDataFileName, DateTime.Now.ToString("dd:MMM:yyyy hh:mm") + ":: " + txtTask.Text + "\r\n");
+            File.AppendAllText(Settings.Default.TaskDataFilePath + @"\" + Settings.Default.TaskDataFileName, DateTime.Now.ToString("dd:MMM:yyyy hh:mm") + ":: " + txtTask.Text + "\r\n");
             this.Close();
         }
 
