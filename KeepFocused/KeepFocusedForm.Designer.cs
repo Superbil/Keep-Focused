@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KeepFocusedForm));
             this.lblTimer = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.lblClose = new System.Windows.Forms.Label();
             this.lblMoveHandle = new System.Windows.Forms.Label();
             this.lblPlayPause = new System.Windows.Forms.Label();
@@ -49,10 +49,10 @@
             this.lblTimer.Size = new System.Drawing.Size(0, 17);
             this.lblTimer.TabIndex = 2;
             // 
-            // timer1
+            // timer
             // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // lblClose
             // 
@@ -141,7 +141,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblTimer;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Label lblPlayPause;
         private System.Windows.Forms.Label lblMoveHandle;

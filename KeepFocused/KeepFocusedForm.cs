@@ -45,7 +45,7 @@ namespace KeepFocused
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer_Tick(object sender, EventArgs e)
         {
             string[] arr;
             arr = lblTimer.Text.Split(':');
@@ -57,7 +57,7 @@ namespace KeepFocused
                 if (breakPeriod)
                 {
                     // Break is over.
-                    timer1.Enabled = false;
+                    timer.Enabled = false;
                     breakPeriod = false;
                     lblTimer.ForeColor = Color.White;
                     if (optionPlaySound)
@@ -89,7 +89,7 @@ namespace KeepFocused
             lblMoveHandle.Font = new Font("Wingdings", 12.00F, FontStyle.Bold);
             OpenTaskForm();
             startTimer();
-            timer1.Enabled = true;
+            timer.Enabled = true;
             this.Location = new Point(Settings.Default.FormX,Settings.Default.FormY);
         }
 
@@ -136,17 +136,17 @@ namespace KeepFocused
 
         private void lblPlayPause_Click(object sender, EventArgs e)
         {
-            if (!timer1.Enabled)
+            if (!timer.Enabled)
             {
                 lblPlayPause.Image = global::KeepFocused.Properties.Resources.stop_Icon_White;
                 startTimer();
                 OpenTaskForm();
-                timer1.Enabled = true;
+                timer.Enabled = true;
             }
             else
             {
                 lblPlayPause.Image = global::KeepFocused.Properties.Resources.Play_Black_Small;
-                timer1.Enabled = false;
+                timer.Enabled = false;
             }
         }
 
