@@ -62,7 +62,8 @@ namespace KeepFocused
                     lblTimer.ForeColor = Color.White;
                     if (optionPlaySound)
                         SystemSounds.Beep.Play();
-                    showMessage("Break is over");
+                    if (optionShowMessage)
+                        showMessage("Break is over");
                 }
                 else
                 {
@@ -105,28 +106,6 @@ namespace KeepFocused
             lblTimer.ForeColor = Color.HotPink;
             lblTimer.Text = pauseDuration;
             breakPeriod = true;
-        }
-
-        /// <summary>
-        /// This function is not ued now. It is a candidate for blogging or source library.
-        /// </summary>
-        /// <param name="button"></param>
-        private void RemoveButtonBorder(Button button)
-        {
-            button.TabStop = false;
-            button.FlatStyle = FlatStyle.Flat;
-            button.FlatAppearance.BorderSize = 0;
-            button.BackColor = Color.Transparent;
-            //button.FlatAppearance.BorderColor = Color.White;
-            //button.FlatAppearance.CheckedBackColor = Color.White;
-            //button.FlatAppearance.MouseDownBackColor = Color.White;
-            //button.FlatAppearance.MouseOverBackColor = Color.White;
-
-            button.FlatAppearance.BorderColor = this.BackColor;
-            button.FlatAppearance.CheckedBackColor = this.BackColor;
-            button.FlatAppearance.MouseDownBackColor = this.BackColor;
-            button.FlatAppearance.MouseOverBackColor = this.BackColor;
-
         }
 
         private void lblClose_Click(object sender, EventArgs e)
@@ -203,7 +182,7 @@ namespace KeepFocused
             //MessageBox.Show(message, "Keep Focused", MessageBoxButtons.OK, MessageBoxIcon.Asterisk,
             //                MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
             Message m = new Message(message);
-            m.ShowDialog();
+            m.ShowDialog(this);
         }
 
         private void moveForm(object sender, EventArgs e)
