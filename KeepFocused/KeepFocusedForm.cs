@@ -200,8 +200,10 @@ namespace KeepFocused
 
         private void showMessage(string message)
         {
-            MessageBox.Show(message, "Keep Focused", MessageBoxButtons.OK, MessageBoxIcon.Asterisk,
-                            MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+            //MessageBox.Show(message, "Keep Focused", MessageBoxButtons.OK, MessageBoxIcon.Asterisk,
+            //                MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+            Message m = new Message(message);
+            m.ShowDialog();
         }
 
         private void moveForm(object sender, EventArgs e)

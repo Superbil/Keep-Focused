@@ -42,102 +42,101 @@
             // 
             // txtTask
             // 
-            this.txtTask.Location = new System.Drawing.Point(7, 36);
-            this.txtTask.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTask.Multiline = true;
+            this.txtTask.AccessibleDescription = null;
+            this.txtTask.AccessibleName = null;
+            resources.ApplyResources(this.txtTask, "txtTask");
+            this.txtTask.BackgroundImage = null;
+            this.txtTask.Font = null;
             this.txtTask.Name = "txtTask";
-            this.txtTask.Size = new System.Drawing.Size(535, 115);
-            this.txtTask.TabIndex = 0;
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(378, 199);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnOK.AccessibleDescription = null;
+            this.btnOK.AccessibleName = null;
+            resources.ApplyResources(this.btnOK, "btnOK");
+            this.btnOK.BackgroundImage = null;
+            this.btnOK.Font = null;
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(76, 28);
-            this.btnOK.TabIndex = 1;
-            this.btnOK.Text = "&OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.butOk_Click);
             // 
             // btnClose
             // 
+            this.btnClose.AccessibleDescription = null;
+            this.btnClose.AccessibleName = null;
+            resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.BackgroundImage = null;
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.Location = new System.Drawing.Point(461, 199);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClose.Font = null;
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(72, 28);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "&Close";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
             // lblWhat
             // 
-            this.lblWhat.AutoSize = true;
-            this.lblWhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWhat.Location = new System.Drawing.Point(3, 16);
+            this.lblWhat.AccessibleDescription = null;
+            this.lblWhat.AccessibleName = null;
+            resources.ApplyResources(this.lblWhat, "lblWhat");
             this.lblWhat.Name = "lblWhat";
-            this.lblWhat.Size = new System.Drawing.Size(189, 13);
-            this.lblWhat.TabIndex = 3;
-            this.lblWhat.Text = "&What you will do in this session:";
             // 
             // lblSessionDataFile
             // 
-            this.lblSessionDataFile.AutoSize = true;
-            this.lblSessionDataFile.Location = new System.Drawing.Point(3, 170);
+            this.lblSessionDataFile.AccessibleDescription = null;
+            this.lblSessionDataFile.AccessibleName = null;
+            resources.ApplyResources(this.lblSessionDataFile, "lblSessionDataFile");
+            this.lblSessionDataFile.Font = null;
             this.lblSessionDataFile.Name = "lblSessionDataFile";
-            this.lblSessionDataFile.Size = new System.Drawing.Size(140, 16);
-            this.lblSessionDataFile.TabIndex = 4;
-            this.lblSessionDataFile.Text = "Session Data File Name";
             // 
             // txtSessionDataFileName
             // 
-            this.txtSessionDataFileName.Location = new System.Drawing.Point(164, 166);
-            this.txtSessionDataFileName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSessionDataFileName.AccessibleDescription = null;
+            this.txtSessionDataFileName.AccessibleName = null;
+            resources.ApplyResources(this.txtSessionDataFileName, "txtSessionDataFileName");
+            this.txtSessionDataFileName.BackgroundImage = null;
+            this.txtSessionDataFileName.Font = null;
             this.txtSessionDataFileName.Name = "txtSessionDataFileName";
             this.txtSessionDataFileName.ReadOnly = true;
-            this.txtSessionDataFileName.Size = new System.Drawing.Size(343, 23);
-            this.txtSessionDataFileName.TabIndex = 5;
             // 
             // lblBrowse
             // 
-            this.lblBrowse.Location = new System.Drawing.Point(514, 164);
-            this.lblBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblBrowse.AccessibleDescription = null;
+            this.lblBrowse.AccessibleName = null;
+            resources.ApplyResources(this.lblBrowse, "lblBrowse");
+            this.lblBrowse.BackgroundImage = null;
+            this.lblBrowse.Font = null;
             this.lblBrowse.Name = "lblBrowse";
-            this.lblBrowse.Size = new System.Drawing.Size(26, 28);
-            this.lblBrowse.TabIndex = 6;
-            this.lblBrowse.Text = "...";
             this.lblBrowse.UseVisualStyleBackColor = true;
             // 
             // btnViewDataFile
             // 
-            this.btnViewDataFile.Location = new System.Drawing.Point(7, 199);
-            this.btnViewDataFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnViewDataFile.AccessibleDescription = null;
+            this.btnViewDataFile.AccessibleName = null;
+            resources.ApplyResources(this.btnViewDataFile, "btnViewDataFile");
+            this.btnViewDataFile.BackgroundImage = null;
+            this.btnViewDataFile.Font = null;
             this.btnViewDataFile.Name = "btnViewDataFile";
-            this.btnViewDataFile.Size = new System.Drawing.Size(161, 28);
-            this.btnViewDataFile.TabIndex = 7;
-            this.btnViewDataFile.Text = "&View Session Data File";
             this.btnViewDataFile.UseVisualStyleBackColor = true;
             this.btnViewDataFile.Click += new System.EventHandler(this.btnViewDataFile_Click);
             // 
             // btnChengFilePath
             // 
-            this.btnChengFilePath.Location = new System.Drawing.Point(175, 199);
-            this.btnChengFilePath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnChengFilePath.AccessibleDescription = null;
+            this.btnChengFilePath.AccessibleName = null;
+            resources.ApplyResources(this.btnChengFilePath, "btnChengFilePath");
+            this.btnChengFilePath.BackgroundImage = null;
+            this.btnChengFilePath.Font = null;
             this.btnChengFilePath.Name = "btnChengFilePath";
-            this.btnChengFilePath.Size = new System.Drawing.Size(161, 28);
-            this.btnChengFilePath.TabIndex = 8;
-            this.btnChengFilePath.Text = "&Change File Path";
             this.btnChengFilePath.UseVisualStyleBackColor = true;
             this.btnChengFilePath.Click += new System.EventHandler(this.btnChengFilePath_Click);
             // 
             // Task
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AccessibleDescription = null;
+            this.AccessibleName = null;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = null;
             this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(547, 240);
             this.Controls.Add(this.btnChengFilePath);
             this.Controls.Add(this.btnViewDataFile);
             this.Controls.Add(this.lblBrowse);
@@ -147,12 +146,9 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtTask);
+            this.Font = null;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Task";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Keep Focused";
             this.Load += new System.EventHandler(this.Task_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
