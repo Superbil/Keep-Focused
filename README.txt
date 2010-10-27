@@ -6,6 +6,10 @@ Download
 ========
 http://github.com/Superbil/Keep-Focused/downloads
 
+License
+=======
+http://github.com/Superbil/Keep-Focused/wiki/License
+
 Change Log
 ==========
  * Add Message when break is over
