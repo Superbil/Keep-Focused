@@ -1,10 +1,13 @@
-== Keep Focused ==
+Keep Focused
+============
 This is base on r49966 from http://keepfocused.codeplex.com/
 
-== Download ==
+Download
+========
 http://github.com/Superbil/Keep-Focused/downloads
 
-== Change Log ==
- *Add Message when break is over
- *Add Position save
- *Add Change File Path
+Change Log
+==========
+ * Add Message when break is over
+ * Add Position save
+ * Add Change File Path
