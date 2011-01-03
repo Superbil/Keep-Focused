@@ -19,6 +19,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <ApplicationIcon>kfLogo15x14.ico</ApplicationIcon>
+    <StartupObject>KeepFocused.Program</StartupObject>
+    <TargetZone>LocalIntranet</TargetZone>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -30,11 +32,9 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>0.3.2.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <StartupObject>KeepFocused.Program</StartupObject>
-    <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
