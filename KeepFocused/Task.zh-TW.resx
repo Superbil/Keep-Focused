@@ -133,9 +133,6 @@
   <data name="lblWhat.Text" xml:space="preserve">
     <value>這階段想要做什麼？</value>
   </data>
-  <data name="lblSessionDataFile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 169</value>
-  </data>
   <data name="lblSessionDataFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 16</value>
   </data>
