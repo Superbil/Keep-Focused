@@ -137,7 +137,7 @@
     <value>143, 16</value>
   </data>
   <data name="lblSessionDataFile.Text" xml:space="preserve">
-    <value>階段工作清單 檔案位置：</value>
+    <value>階段工作清單 檔案位置</value>
   </data>
   <data name="btnViewDataFile.Text" xml:space="preserve">
     <value>做過的工作清單</value>
