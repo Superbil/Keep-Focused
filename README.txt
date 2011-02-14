@@ -15,3 +15,5 @@ Change Log
  * Add Message when break is over
  * Add Position save
  * Add Change File Path
+ * Fix Form & Button size
+ * Add Chinece (zh-TW) support
