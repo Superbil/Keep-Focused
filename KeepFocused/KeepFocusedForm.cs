@@ -51,6 +51,7 @@ namespace KeepFocused
             arr = lblTimer.Text.Split(':');
             int mins = int.Parse(arr[0]);
             int secs = int.Parse(arr[1]);
+            bool again = false;
 
             if (mins == 0 && secs == 0)
             {
@@ -63,7 +64,8 @@ namespace KeepFocused
                     if (optionPlaySound)
                         SystemSounds.Beep.Play();
                     if (optionShowMessage)
-                        showMessage("Break is over");
+                        if (DialogResult.Yes == showMessage("Break is over, start again?", MessageBoxButtons.YesNo))
+                            again = true;
                 }
                 else
                 {
@@ -75,13 +77,20 @@ namespace KeepFocused
                     if (optionPlaySound)
                         SystemSounds.Asterisk.Play();
                     if (optionShowMessage)
-                        showMessage("Pomodoro activity finished");
+                        showMessage("Pomodoro activity finished",MessageBoxButtons.OK);
                 }
             }
 
             TimeSpan ts = new TimeSpan(0, mins, secs);
             ts = ts.Subtract(new TimeSpan(10));
             lblTimer.Text = String.Format(ts.Minutes.ToString("D2")) + ":" + String.Format(ts.Seconds.ToString("D2"));
+            if (again)
+            {
+                startTimer();
+                lblPlayPause.Image = global::KeepFocused.Properties.Resources.Play_Black_Small;
+                timer.Enabled = true;
+            }
+
         }
 
         private void KeepFocusedForm_Load(object sender, EventArgs e)
@@ -177,12 +186,14 @@ namespace KeepFocused
             taskForm.ShowDialog();
         }
 
-        private void showMessage(string message)
+        private DialogResult showMessage(string message,MessageBoxButtons buttons)
         {
-            MessageBox.Show(message, "Keep Focused", MessageBoxButtons.OK, MessageBoxIcon.Asterisk,
-                            MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
-            //Message m = new Message(message);
-            //m.ShowDialog(this);
+            return MessageBox.Show(
+                message, "Keep Focused", 
+                buttons , MessageBoxIcon.Asterisk,
+                MessageBoxDefaultButton.Button1, 
+                MessageBoxOptions.ServiceNotification
+                );
         }
 
         private void moveForm(object sender, EventArgs e)
